@@ -10,6 +10,7 @@ function App() {
     <>
       <h1 className='text-center text-5xl font-bold'>hira batool</h1>
       <h1 className='text-center text-5xl font-bold'>portfolio</h1>
+      <h1 className='text-center text-5xl font-bold'>easily</h1>
     </>
   )
 }
