@@ -1,1 +1,46 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+body{
+    font-family: "Fira Code", monospace;
+    background-color: #383d45;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+.typewriter {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  width: 0%;                 
+  animation: typing 3s steps(40, end) forwards, blink 0.7s step-end infinite;
+}
+
+.delay-0 { animation-delay: 0s, 0s; }
+.delay-1 { animation-delay: 3s, 3s; }
+
+.delay-2 { animation-delay: 0s, 0s; }
+.delay-3 { animation-delay: 1s, 1s; }
+.delay-4 { animation-delay: 3s, 3s; }
+.delay-5 { animation-delay: 5s, 5s; }
+.delay-6 { animation-delay: 7s, 7s; }
+
+@keyframes typing {
+  from {
+    width: 0%;
+    visibility: visible; 
+  }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}

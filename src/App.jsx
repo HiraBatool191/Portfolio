@@ -2,15 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Routers from './Routers'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1 className='text-center text-5xl font-bold'>hira batool</h1>
-      <h1 className='text-center text-5xl font-bold'>portfolio</h1>
-      <h1 className='text-center text-5xl font-bold'>easily</h1>
+     <Routers/>
     </>
   )
 }
