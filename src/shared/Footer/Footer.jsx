@@ -23,9 +23,9 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="border-t border-white/50 py-8">
+    <footer className="border-t border-white/50 py-8 md:px-0 px-2.5">
       <div className="container mx-auto">
-        <div className="flex items-start justify-between pb-5">
+        <div className="flex flex-wrap gap-5 items-start justify-between pb-5">
           <div>
             <div
               className="flex items-center text-xl font-bold cursor-pointer mb-2"
