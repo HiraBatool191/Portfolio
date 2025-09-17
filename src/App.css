@@ -6,7 +6,7 @@ body{
     background-color: #383d45;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -43,4 +43,18 @@ body{
 
 @keyframes blink {
   50% { border-color: transparent; }
+}
+
+
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-bounce-x {
+  animation: bounce-x 1s infinite;
 }

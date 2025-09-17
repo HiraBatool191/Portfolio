@@ -2,12 +2,19 @@ import React from "react";
 import Header from "../../shared/Header/Header";
 import Footer from "../../shared/Footer/Footer";
 import { Outlet } from "react-router-dom";
+import Fixed from "../../shared/Fixed/Fixed";
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <div className="hidden md:fixed top-1/3 left-4 -translate-y-1/2 z-99 ">
+        <Fixed />
+      </div>
+
+      <div className="mt-20">
+        <Outlet />
+      </div>
       <Footer />
     </>
   );
