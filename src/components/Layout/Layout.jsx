@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       <Header />
-      <div className="hidden md:fixed top-1/3 left-4 -translate-y-1/2 z-99 ">
+      <div className="hidden lg:block fixed top-1/5 left-4 -translate-y-1/2 z-99 ">
         <Fixed />
       </div>
 

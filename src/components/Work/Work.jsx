@@ -1,9 +1,70 @@
-import React from 'react'
+import React from "react";
+import ProjectCards from "../ProjectCards/ProjectCards";
+import departedNote from "../../assets/departedNote.png";
+import superAdmin from "../../assets/superAdmin.png";
+import lendAgain from "../../assets/lendAgain.png";
+import vendor from "../../assets/vendor.png";
+import SmallProjects from "./SmallProjects";
 
 const Work = () => {
-  return (
-    <div>Work</div>
-  )
-}
+  const projectcard = [
+    {
+      img: departedNote,
+      frame: "React.js, Tailwind CSS, TanStack Table",
+      title: "DepartedNote",
+      detail:
+        "DepartedNote is a highly advanced and fully responsive web dashboard built with React.js and Tailwind CSS. It has been designed with a modern, clean, and user-centric approach, offering seamless navigation and intuitive layouts. The platform enables users to monitor, manage, and analyze key data metrics in real time through interactive tables powered by TanStack Table. With its scalable front-end architecture, DepartedNote emphasizes reusability of components, making the system easier to maintain and expand. From structured data management to insightful visual representation, this dashboard reflects a professional-level execution of front-end best practices. It demonstrates how efficiency, performance, and design can come together to create a polished and reliable product for enterprise-level applications.",
+      onLiveClick:
+        "https://phpstack-1250693-5581655.cloudwaysapps.com/web-dashboard",
+    },
+    {
+      img: superAdmin,
+      frame: "React.js, Tailwind CSS, Toast Notifications, TanStack Table",
+      title: "Custom CRM",
+      detail:
+        "Custom CRM is a feature-rich dashboard application developed with React.js and styled using Tailwind CSS. It offers a sleek interface equipped with toast notifications for real-time feedback, dynamic data tables for effective data manipulation, and visually appealing charts and graphs for performance monitoring. Designed to streamline customer relationship management, the platform supports quick decision-making through interactive elements and fast-rendering components. The modular architecture ensures scalability, while the integration of TanStack Table provides advanced sorting, filtering, and pagination capabilities. Custom CRM not only enhances user productivity but also delivers a smooth and responsive experience, making it an ideal solution for businesses looking to modernize and automate their CRM workflows.",
+      onLiveClick:
+        "https://phpstack-1250693-5637632.cloudwaysapps.com/super-admin/home",
+    },
+    {
+      img: lendAgain,
+      frame: "React.js, Tailwind CSS, React Query, TanStack Table",
+      title: "Lend Again",
+      detail:
+        "Lend Again is a comprehensive web platform that focuses on secure user authentication, efficient data handling, and a seamless overall experience. Built with React.js, styled with Tailwind CSS, and enhanced using React Query for optimized data fetching, the system ensures both security and performance. The application provides a robust signup and login system with authentication protocols that protect sensitive user information. Its dashboard offers a structured and modern interface where users can manage their data effortlessly, track essential activities, and visualize information through interactive tables powered by TanStack Table. The platform emphasizes accessibility, speed, and user engagement, presenting a professional-grade solution for businesses and organizations that require both reliability and a polished digital presence.",
+      onLiveClick: "https://phpstack-1250693-5693020.cloudwaysapps.com/",
+    },
+    {
+      img: vendor,
+      frame: "React.js, Tailwind CSS, React Query, TanStack Table",
+      title: "ESA Helper ",
+      detail:
+        "ESA Helper is a role-based dashboard system designed with three distinct user roles: Parent, Vendor, and Admin. The Parent dashboard provides a top-level view of the entire system, allowing management of vendors, global settings, and detailed reports. The Vendor dashboard is tailored to individual vendors, enabling them to manage their orders, inventory, products, revenue tracking, and profile settings. The Admin dashboard acts as the middle layer, overseeing vendor approvals, monitoring user activity, and managing operational controls. To enhance usability, an integrated AI Chatbot offers real-time assistance and guidance, making the system more intuitive and user-friendly.",
+      onLiveClick: "https://phpstack-1250693-5680655.cloudwaysapps.com/login",
+    },
+  ];
 
-export default Work
+  return (
+    <>
+      <div className="text-white lg:pt-20 pt-10 lg:pb-10 pb-5 px-2.5 md:px-2.5">
+        <div className="container">
+          <div className="mb-8">
+            <h3 className="text-[32px] mb-2">
+              <span className="text-purple-500">/</span>projects
+            </h3>
+            <p className="">List of my projects</p>
+          </div>
+          <h3 className="text-2xl mb-4">
+            <span className="text-purple-500 mr-1">#</span>UI Projects
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start ">
+            <ProjectCards projectcard={projectcard} isImg="true" />
+          </div>
+        </div>
+      </div>
+      <SmallProjects />
+    </>
+  );
+};
+
+export default Work;

@@ -12,7 +12,7 @@ const Button = ({
   ...rest
 }) => {
   const variants = {
-    defaultBtn: "text-white border border-purple-500",
+    defaultBtn: "text-white border border-purple-500 hover:bg-[#C778DD]/20",
     transparent: "border-0 bg-transparent text-white p-0!",
   };
 

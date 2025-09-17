@@ -1,26 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React from "react";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
-const Model = ({ modelTitle, children, onClose }) => {
-  const modalRef = useRef();
-
-  useEffect(() => {
-    const handleOutsideClick = (e) => {
-      if (modalRef.current && !modalRef.current.contains(e.target)) {
-        onClose();
-      }
-    };
-
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, [onClose]);
-
+const Model = ({ setIsOpen, children, className = "" }) => {
   return (
-    <div className='fixed inset-0 bg-black/40 flex justify-center items-center z-99'>
+    <div
+      className="fixed inset-0 bg-black/20 flex justify-center items-center z-99"
+      onClick={() => setIsOpen(false)}
+    >
       <div
-        ref={modalRef}
-        className='border border-[#E9EAEB] bg-white rounded-2xl w-[430px] px-5 pt-9 pb-1.5 max-h-[90vh] overflow-y-auto mx-4 my-6'
+        className={`bg-white md:p-7.5 p-3 py-8 rounded-[10px] relative w-[600px] md:max-h-[80vh] max-h-[90vh] overflow-y-auto mx-4 my-6 ${className}`}
+        onClick={(e) => e.stopPropagation()}
       >
-        <h3 className='text-2xl font-bold text-[#2F3542] mb-2.5 text-center'>{modelTitle}</h3>
+        <button
+          onClick={() => setIsOpen(false)}
+          className="absolute top-2 md:top-3 right-3 text-gray-700 hover:text-black transition"
+        >
+          <IoIosCloseCircleOutline size={24} className="cursor-pointer" />
+        </button>
+
         <div>{children}</div>
       </div>
     </div>
