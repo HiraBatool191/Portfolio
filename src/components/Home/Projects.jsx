@@ -43,7 +43,7 @@ const Projects = () => {
       <div className="container">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <h3 className="text-xl font-medium">
+            <h3 className="text-3xl font-medium">
               {" "}
               <span className="text-purple-500 mr-1">#</span>projects
             </h3>
