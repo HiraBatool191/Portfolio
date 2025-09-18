@@ -57,7 +57,7 @@ const ProjectCards = ({ projectcard, isImg }) => {
 
       {activeCard && (
         <Model setIsOpen={() => setActiveCard(null)}>
-          {isImg && items.img && (
+          {isImg && activeCard.img && (
             <img src={activeCard.img} alt="project" className="mb-5" />
           )}
 
