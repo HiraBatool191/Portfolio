@@ -11,8 +11,8 @@ export const Headerdata = [
     path: "/about-me",
     title: "About-me",
   },
-  // {
-  //   path: "/contact",
-  //   title: "Contact",
-  // },
+  {
+    path: "/contact",
+    title: "Contact",
+  },
 ];

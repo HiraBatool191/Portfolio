@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import HomePage from "./Pages/HomePage";
 import WorkPage from "./Pages/WorkPage";
 import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
 
 const Routers = () => {
   return (
@@ -16,6 +17,7 @@ const Routers = () => {
           <Route path="home" element={<HomePage />} />
           <Route path="work" element={<WorkPage />} />
           <Route path="about-me" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
         </Route>
       </Routes>
     </>
