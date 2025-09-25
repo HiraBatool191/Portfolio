@@ -8,33 +8,46 @@ const Fixed = () => {
     {
       icon: <FaLinkedin size={24} />,
       url: "https://www.linkedin.com/in/hira-batool-9613a7258",
+      label: "LinkedIn",
     },
     {
       icon: <FaGithub size={24} />,
       url: "https://github.com/HiraBatool191",
+      label: "GitHub",
     },
     {
       icon: <MdEmail size={24} />,
       url: "mailto:batool.hira2020@gmail.com",
+      label: "Email",
     },
   ];
-  return (
-    <>
 
-      <div className="flex flex-col gap-3">
-         <div className="w-px mx-auto h-46 bg-white/80"></div>
-        {socialLinks.map((item, index) => (
-          <Link
-            key={index}
-            to={item.url}
-            target="_blank"
-            className=" text-white/80 hover:text-white transition-all hover:scale-110"
+  return (
+    <div className="flex flex-col gap-4 items-center">
+      <div className="w-px mx-auto h-46 bg-white/80"></div>
+      {socialLinks.map((item, index) => (
+        <Link
+          key={index}
+          to={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative group flex items-center text-white/80 hover:text-purple-200 transition-all"
+        >
+          {item.icon}
+          <span
+            className="
+              absolute left-8 
+              opacity-0 group-hover:opacity-100 
+              transform -translate-x-2 group-hover:translate-x-0
+              transition-all duration-300 ease-out
+              text-sm bg-purple-300 text-purple-700 px-2 py-1 rounded-md whitespace-nowrap
+            "
           >
-            {item.icon}
-          </Link>
-        ))}
-      </div>
-    </>
+            {item.label}
+          </span>
+        </Link>
+      ))}
+    </div>
   );
 };
 

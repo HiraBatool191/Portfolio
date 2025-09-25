@@ -11,41 +11,57 @@ import npmIcon from "../../assets/npmIcon.svg"
 import zodIcon from "../../assets/zodIcon.svg"
 import postmanIcon from "../../assets/postmanIcon.svg"
 import reduxIcon from "../../assets/reduxIcon.svg"
+import wordpressIcon from "../../assets/wordpressIcon.png"
 
 const SkillsImgs = () => {
     const skills=[
         {
-            icon:htmlIcon
+            icon:htmlIcon,
+            title:"HTML"
         },
         {
-            icon:cssIcon
+            icon:cssIcon,
+            title:"CSS"
         },
         {
-            icon:jsIcon
+            icon:jsIcon,
+            title:"JS"
         },
         {
-            icon:reactIcon
+            icon:reactIcon,
+            title:"React"
         },
          {
-            icon:tailwindIcon
+            icon:tailwindIcon,
+            title:"Tailwind"
          },
          {
-             icon:viteIcon
+             icon:viteIcon,
+             title:"Vite"
          },
         {
-            icon:axiosIcon
+            icon:axiosIcon,
+            title:"Axios"
         },
         {
-            icon:zodIcon
+            icon:zodIcon,
+            title:"Zod"
         },
         {
-            icon:npmIcon
+            icon:npmIcon,
+            title:"NPM"
         },
         {
-            icon:postmanIcon
+            icon:postmanIcon,
+            title:"Postman"
         },
         {
-            icon:reduxIcon
+            icon:reduxIcon,
+            title:"Redux"
+        },
+        {
+            icon:wordpressIcon,
+            title:"WordPress"
         },
     ]
   return (

@@ -1,9 +1,31 @@
 import React from "react";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import Button from "../Button/Button";
+import Particles from "react-tsparticles";
 const Banner = () => {
   return (
-    <div className="md:pt-20 md:pb-10 pt-10 pb-5 px-2.5 md:px-0">
+    <div className="md:pt-50 md:pb-10 pt-30 pb-5 px-2.5 min-h-screen md:px-0 animated-bg lg:rounded-b-[100px] lg:rounded-bl-[100px] rounded-b-[30px] rounded-bl-[30px]">
+      <Particles  
+        className="absolute top-0 left-0 w-full h-full -z-10"
+        options={{
+          fpsLimit: 60,
+          interactivity: {
+            events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+            modes: { repulse: { distance: 100 } }
+          },
+          particles: {
+            color: { value: "#a855f7" },
+            links: { enable: true, color: "#a855f7", distance: 120, opacity: 0.3 },
+            collisions: { enable: false },
+            move: { enable: true, speed: 1 },
+            number: { value: 40 },
+            opacity: { value: 0.6 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 4 } }
+          },
+          detectRetina: true
+        }}
+      />
       <div className="container mx-auto text-white text-center">
         <h1 className="hidden lg:block text-3xl md:text-5xl font-bold  mb-4">
           <span className="typewriter delay-0">

@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Headerdata } from "./Constant";
 import { HiMenu, HiX } from "react-icons/hi";
+import { motion } from "framer-motion"; 
 
 const Header = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -18,16 +20,40 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="py-6 shadow-2xl text-white md:px-0 px-2.5 fixed w-full top-0 z-99 bg-[#383d45]">
+    <header className="py-6 shadow-2xl text-white md:px-0 px-2.5 fixed w-full top-0 z-50 backdrop-blur-md">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
+       
           <div
-            className="flex items-center text-2xl font-bold cursor-pointer"
+            className="group hover:scale-105 transition-all flex items-center text-2xl font-bold cursor-pointer"
             onClick={() => navigate("/")}
           >
-            <span className="text-purple-500">&lt;</span>
-            <span className="mx-1 text-purple-500">Hira</span>
-            <span className="text-purple-500">/&gt;</span>
+            <motion.span
+              className="text-purple-500"
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              &lt;
+            </motion.span>
+
+            <motion.span
+              className="mx-1 text-purple-500"
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              Hira
+            </motion.span>
+
+            <motion.span
+              className="text-purple-500"
+              initial={{ x: 30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              /&gt;
+            </motion.span>
           </div>
 
           <div className="hidden md:flex items-center gap-5">
