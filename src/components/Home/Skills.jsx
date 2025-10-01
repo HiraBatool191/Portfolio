@@ -9,7 +9,7 @@ const Skills = () => {
     style={{ backgroundImage: `url(${skillsbg})` }}>
       
 
-      <div className="relative z-10 container">
+      <div className="container">
         <div className="flex items-center gap-3 justify-start mb-8">
           <h3 className="lg:text-3xl text-2xl font-medium">
             <span className="text-purple-500 mr-1">#</span>skills
