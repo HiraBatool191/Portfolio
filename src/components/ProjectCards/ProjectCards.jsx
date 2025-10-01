@@ -18,24 +18,23 @@ const ProjectCards = ({ projectcard, isImg }) => {
             <img
               src={items.img}
               alt="projects"
-              className="h-55 w-full object-cover cursor-pointer"
+              className="md:h-55 h-42 w-full object-cover cursor-pointer"
               onClick={() => setActiveCard(items)}
             />
           )}
           <div className="border-y border-white/70 px-1.5 py-2">
-            <p className="text-white/80">{items.frame}</p>
+            <p className="lg:text-base text-sm text-white/80">{items.frame}</p>
           </div>
           <div className="px-3 py-3.5">
-            <h3 className="text-xl capitalize mb-2.5">{items.title}</h3>
-            <p className="text-white/60 mb-3 line-clamp-2">{items.detail}</p>
+            <h3 className="lg:text-xl text-base capitalize lg:mb-2.5 mb-1">{items.title}</h3>
+            <p className="text-white/60 mb-3 line-clamp-2 lg:text-base text-sm">{items.detail}</p>
             <div className="flex items-center gap-2.5">
               {items.onLiveClick && (
                 <Button
                   onClick={() => window.open(items.onLiveClick, "_blank")}
                   suffixImg={
                     <IoIosArrowRoundForward
-                      size={26}
-                      className="animate-bounce-x"
+                      className="w-5 h-5 md:w-6 md:h-6 animate-bounce-x" 
                     />
                   }
                 >

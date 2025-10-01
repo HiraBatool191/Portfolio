@@ -4,11 +4,11 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 const Model = ({ setIsOpen, children, className = "" }) => {
   return (
     <div
-      className="fixed inset-0 bg-black/20 flex justify-center items-center z-99"
+      className="fixed top-18 inset-0 bg-black/20 flex justify-center items-center z-50"
       onClick={() => setIsOpen(false)}
     >
       <div
-        className={`bg-white md:p-7.5 p-3 py-8 rounded-[10px] relative w-[600px] md:max-h-[80vh] max-h-[90vh] overflow-y-auto mx-4 my-6 ${className}`}
+        className={`bg-white md:p-7.5 p-3 py-8 rounded-[10px] relative w-[600px] md:max-h-[80vh] max-h-[80vh] overflow-y-auto mx-4 my-6 ${className}`}
         onClick={(e) => e.stopPropagation()}
       >
         <button

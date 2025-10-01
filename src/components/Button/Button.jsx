@@ -20,7 +20,7 @@ const Button = ({
     <button
       type={type}
       onClick={onClick}
-      className={`group whitespace-nowrap capitalize px-5 py-1.5 text-base transition duration-300 flex items-center gap-2 justify-center cursor-pointer ${variants[variant]} ${className}`}
+      className={`group whitespace-nowrap capitalize px-5 py-1.5 text-sm lg:text-base transition duration-300 flex items-center gap-2 justify-center cursor-pointer ${variants[variant]} ${className}`}
       {...rest}
     >
       {prefixImg && prefixImg}

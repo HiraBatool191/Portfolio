@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Particles from "react-tsparticles";
 const Banner = () => {
   return (
-    <div className="md:pt-50 md:pb-10 pt-30 pb-5 px-2.5 min-h-screen md:px-0 animated-bg lg:rounded-b-[100px] lg:rounded-bl-[100px] rounded-b-[30px] rounded-bl-[30px]">
+    <div className="md:pt-50 md:pb-10 pt-30 pb-5 px-2.5 min-h-screen md:px-0 animated-bg lg:rounded-b-[100px] lg:rounded-bl-[100px] rounded-b-[30px] rounded-bl-[30px] z-99">
       <Particles  
         className="absolute top-0 left-0 w-full h-full -z-10"
         options={{
@@ -59,7 +59,7 @@ const Banner = () => {
         <div className="mb-5 relative border border-white/50 w-fit p-5 mx-auto mt-5 md:mt-10 text-white font-bold">
           <RiDoubleQuotesL className="absolute -top-3 left-3 text-2xl text-purple-400" />
 
-          <p className="pl-2">Crafting modern web magic.</p>
+          <p className="pl-2 text-sm lg:text-lg">Crafting modern web magic.</p>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const AboutMe = ({isBtn,isHead}) => {
       
         <div className="container">
           {isHead && <div className="flex items-center gap-3 justify-start mb-5">
-            <h3 className="text-3xl font-medium">
+            <h3 className="lg:text-3xl text-2xl font-medium">
               {" "}
               <span className="text-purple-500 mr-1">#</span>about-me
             </h3>
@@ -19,7 +19,7 @@ const AboutMe = ({isBtn,isHead}) => {
           </div>}
           <div className="flex lg:flex-nowrap flex-wrap items-center gap-5">
             <div className="lg:flex-1">
-              <div className="md:space-y-3.5 space-y-2 max-w-[500px] mb-4 lg:mb-8">
+              <div className="md:space-y-3.5 lg:text-base text-sm space-y-2 max-w-[500px] mb-4 lg:mb-8">
                 <p>
                   I'm a passionate Frontend Developer who transforms ideas into
                   interactive digital experiences.

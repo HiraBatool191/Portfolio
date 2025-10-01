@@ -26,7 +26,7 @@ const Skills = () => {
 
       <div className="relative z-10 container">
         <div className="flex items-center gap-3 justify-start mb-8">
-          <h3 className="text-3xl font-medium">
+          <h3 className="lg:text-3xl text-2xl font-medium">
             <span className="text-purple-500 mr-1">#</span>skills
           </h3>
           <div className="lg:block hidden w-100 h-[0.5px] bg-purple-400"></div>

@@ -42,7 +42,7 @@ const Projects = () => {
     <div className="relative mt-[-90px] text-white pb-10 md:pb-20 pt-35 md:pt-40 px-2.5 md:px-0 overflow-hidden ">
       
       <div
-        className="absolute inset-0 w-full h-full -z-10"
+        className="absolute inset-0 w-full h-full -z-100"
         style={{
           backgroundImage:
             "url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGtmbWVoOXdodDY3ZGlnYmphM3F5YmlkOGk5eGF4bmJkaGUwaDhobSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTniuHdUjpOlNo1q/giphy.gif')",
@@ -56,7 +56,7 @@ const Projects = () => {
       <div className="container relative z-10">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <h3 className="text-3xl font-medium">
+            <h3 className="lg:text-3xl text-2xl font-medium">
               <span className="text-purple-500 mr-1">#</span>projects
             </h3>
             <div className="lg:block hidden w-164 mx-auto h-[0.5px] bg-purple-400"></div>
@@ -64,7 +64,7 @@ const Projects = () => {
           <Button
             variant="transparent"
             imgClass="transform transition-transform duration-300 group-hover:translate-x-1"
-            suffixImg={<IoIosArrowRoundForward size={28} />}
+            suffixImg={<IoIosArrowRoundForward size={26} />}
             onClick={() => navigate("/work")}
           >
             view all

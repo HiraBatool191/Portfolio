@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="py-6 shadow-2xl text-white md:px-0 px-2.5 fixed w-full top-0 z-50 backdrop-blur-md">
+    <header className="py-6 shadow-2xl text-white md:px-0 px-2.5 fixed w-full top-0 z-20 backdrop-blur-md">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
        
