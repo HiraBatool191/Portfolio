@@ -23,7 +23,6 @@ const Footer = () => {
 
   return (
     <footer className="relative py-8 md:px-0 px-2.5">
-      
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-[length:200%_200%] animated-bg"></div>
 
       <div className="container mx-auto relative z-10">
@@ -43,7 +42,9 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="lg:text-2xl text-xl text-white font-bold mb-2">Media</h3>
+            <h3 className="lg:text-2xl text-xl text-white font-bold mb-2">
+              Media
+            </h3>
             <div className="flex gap-4">
               {socialLinks.map((item, index) => (
                 <Link

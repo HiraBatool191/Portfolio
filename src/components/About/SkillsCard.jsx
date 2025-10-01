@@ -14,7 +14,7 @@ const SkillsCard = ({ skills }) => {
             alt="skills"
             className="h-25 w-25 object-contain"
           />
-          <h2 className="">{items.title}</h2>
+          <h2 className="lg:text-base text-sm">{items.title}</h2>
         </div>
       ))}
     </>

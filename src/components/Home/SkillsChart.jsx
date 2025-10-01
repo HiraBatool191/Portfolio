@@ -79,7 +79,7 @@ const SkillsChart = () => {
   return (
     <div
       ref={sectionRef}
-      className="border border-white/70 rounded-2xl grid grid-cols-2 gap-3 max-w-[450px] mx-auto p-3"
+      className="border border-white/70 rounded-2xl grid grid-cols-2 gap-3 max-w-[450px] mr-auto p-3"
     >
       {data.map((item, i) => (
         <div key={i} className="flex justify-center items-center">
