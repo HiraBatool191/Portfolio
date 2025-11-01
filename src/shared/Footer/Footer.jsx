@@ -22,8 +22,8 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="relative py-8 md:px-0 px-2.5">
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-[length:200%_200%] animated-bg"></div>
+    <footer className="relative py-8 md:px-0 px-2.5 overflow-hidden ">
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-[length:200%_200%] animate-[gradientMove_6s_linear_infinite]"></div>
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-wrap md:gap-5 gap-3 items-start justify-between pb-5">
@@ -32,17 +32,17 @@ const Footer = () => {
               className="flex items-center text-xl font-bold cursor-pointer mb-2"
               onClick={() => navigate("/")}
             >
-              <span className="text-purple-500">&lt;</span>
-              <span className="mx-1 text-purple-500">Hira</span>
-              <span className="text-purple-500">/&gt;</span>
+              <span className="text-purple-400">&lt;</span>
+              <span className="mx-1 text-purple-400">Hira</span>
+              <span className="text-purple-400">/&gt;</span>
             </div>
-            <p className="text-white/80 lg:text-base text-sm">
+            <p className="text-primary/80 lg:text-base text-sm">
               Let's build something amazing together.
             </p>
           </div>
 
           <div>
-            <h3 className="lg:text-2xl text-xl text-white font-bold mb-2">
+            <h3 className="lg:text-2xl text-xl text-primary font-bold mb-2">
               Media
             </h3>
             <div className="flex gap-4">
@@ -51,7 +51,7 @@ const Footer = () => {
                   key={index}
                   to={item.url}
                   target="_blank"
-                  className="text-white/50 hover:text-white transition-all hover:scale-110"
+                  className="text-primary/50 hover:text-primary transition-all hover:scale-110"
                 >
                   {item.icon}
                 </Link>
@@ -60,11 +60,19 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p className="text-white text-center lg:text-base text-xs">
+          <p className="text-primary text-center lg:text-base text-xs">
             © 2025 Hira. All rights reserved.
           </p>
         </div>
       </div>
+
+      <style>{`
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </footer>
   );
 };

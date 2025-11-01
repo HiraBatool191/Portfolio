@@ -3,12 +3,19 @@
 
 body{
     font-family: "Fira Code", monospace;
-    background-color: rgb(35, 38, 44);
+    /* background-color: #0f0f10; */
+    /* background-color: rgb(14, 15, 16); */
+    background-color: white;
 }
 .container{
     max-width: 1150px;
     margin: 0 auto;
 }
+:root {
+  --primary-color: #fff;
+  --secondary-color: black;
+}
+
 
 
 

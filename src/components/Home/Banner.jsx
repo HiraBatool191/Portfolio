@@ -26,8 +26,9 @@ const Banner = () => {
           detectRetina: true
         }}
       />
-      <div className="container mx-auto text-white text-center">
-        <h1 className="hidden lg:block text-3xl md:text-5xl font-bold  mb-4">
+      <div className="container text-white mx-auto flex flex-col justify-center items-center gap-1 text-primary text-center">
+        <div>
+          <h1 className="hidden text-white lg:block text-3xl md:text-5xl font-bold  mb-4">
           <span className="typewriter delay-0">
             I’m Hira — React developer passionate
           </span>
@@ -55,8 +56,9 @@ const Banner = () => {
             responsive design.
           </span>
         </h1>
+        </div>
         <p>Where creativity meets clean code & modern design.</p>
-        <div className="mb-5 relative border border-white/50 w-fit p-5 mx-auto mt-5 md:mt-10 text-white font-bold">
+        <div className="mb-5 relative border border-white/50 w-fit p-5 mx-auto mt-5 md:mt-10 text-primary font-bold">
           <RiDoubleQuotesL className="absolute -top-3 left-3 text-2xl text-purple-400" />
 
           <p className="pl-2 text-sm lg:text-lg">Crafting modern web magic.</p>

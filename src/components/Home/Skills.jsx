@@ -1,7 +1,7 @@
 import React from "react";
 import SkillsChart from "./SkillsChart";
 import Skill from "../../assets/skills.png";
-import skillsbg from "../../assets/skills-bg.jpg"
+import skillsbg from "../../assets/skills-bg.avif"
 
 const Skills = () => {
   return (

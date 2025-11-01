@@ -62,7 +62,7 @@ const Header = () => {
                 key={i}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-[18px] cursor-pointer ${
+                  `text-[18px] cursor-pointer text-white ${
                     isActive
                       ? "font-normal text-white"
                       : "font-normal text-white/80 hover:text-white transition-all"

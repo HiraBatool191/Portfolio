@@ -11,7 +11,7 @@ import npmIcon from "../../assets/npmIcon.svg"
 import zodIcon from "../../assets/zodIcon.svg"
 import postmanIcon from "../../assets/postmanIcon.svg"
 import reduxIcon from "../../assets/reduxIcon.svg"
-import wordpressIcon from "../../assets/wordpressIcon.png"
+import wordpressIcon from "../../assets/wordpress.avif"
 
 const SkillsImgs = () => {
     const skills=[
@@ -65,7 +65,7 @@ const SkillsImgs = () => {
         },
     ]
   return (
-    <div className="text-white lg:pt-10 pt-5 pb-10 lg:pb-20 px-2.5 md:px-2.5">
+    <div className="text-primary lg:pt-10 pt-5 pb-10 lg:pb-20 px-2.5 md:px-2.5">
       <div className="container">
         <h3 className="lg:text-2xl text-xl mb-4">
           <span className="text-purple-500 mr-1">#</span>Skills

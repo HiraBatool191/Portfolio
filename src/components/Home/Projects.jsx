@@ -39,7 +39,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="relative mt-[-90px] text-white pb-10 md:pb-20 pt-35 md:pt-40 px-2.5 md:px-0 overflow-hidden ">
+    <div className="text-blue-950 relative mt-[-90px] text-primary pb-10 md:pb-20 pt-35 md:pt-40 px-2.5 md:px-0 overflow-hidden ">
       
       <div
         className="absolute inset-0 w-full h-full -z-100"

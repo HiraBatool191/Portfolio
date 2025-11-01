@@ -10,7 +10,7 @@ const Home = () => {
       <Banner />
       <Projects />
       <Skills />
-      <div className="text-white lg:py-10 py-5 px-2.5 md:px-0">
+      <div className="text-primary lg:py-20 py-10 relative overflow-hidden px-2.5 md:px-0">
         <AboutMe isBtn={true} isHead={true} />
       </div>
     </>

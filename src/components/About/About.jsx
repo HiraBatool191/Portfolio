@@ -5,7 +5,7 @@ import SkillsImgs from "./SkillsImgs";
 const About = () => {
   return (
     <>
-      <div className="text-white lg:pt-40 pt-30 lg:pb-10 pb-5 px-2.5 md:px-2.5">
+      <div className="text-primary relative overflow-hidden lg:pt-40 pt-30 lg:pb-10 pb-5 px-2.5 md:px-2.5">
         <div className="container">
           <div className="lg:mb-8 mb-5">
             <h3 className="lg:text-[32px] text-2xl mb-2">

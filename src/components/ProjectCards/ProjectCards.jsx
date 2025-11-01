@@ -12,7 +12,7 @@ const ProjectCards = ({ projectcard, isImg }) => {
       {projectcard.map((items, i) => (
         <div
           key={i}
-          className="text-white border border-white/70 hover:scale-103 transition-all"
+          className="text-primary border border-white/70 hover:scale-103 transition-all"
         >
           {isImg && items.img && (
             <img
@@ -23,11 +23,11 @@ const ProjectCards = ({ projectcard, isImg }) => {
             />
           )}
           <div className="border-y border-white/70 px-1.5 py-2">
-            <p className="lg:text-base text-sm text-white/80">{items.frame}</p>
+            <p className="lg:text-base text-sm text-primary/80">{items.frame}</p>
           </div>
           <div className="px-3 py-3.5">
             <h3 className="lg:text-xl text-base capitalize lg:mb-2.5 mb-1">{items.title}</h3>
-            <p className="text-white/60 mb-3 line-clamp-2 lg:text-base text-sm">{items.detail}</p>
+            <p className="text-primary/60 mb-3 line-clamp-2 lg:text-base text-sm">{items.detail}</p>
             <div className="flex items-center gap-2.5">
               {items.onLiveClick && (
                 <Button

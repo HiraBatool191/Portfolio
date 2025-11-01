@@ -31,7 +31,7 @@ const Fixed = () => {
           to={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group flex items-center text-white/80 hover:text-purple-200 transition-all"
+          className="relative group flex items-center text-primary/80 hover:text-purple-200 transition-all"
         >
           {item.icon}
           <span
