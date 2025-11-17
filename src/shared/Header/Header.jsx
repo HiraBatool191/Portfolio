@@ -62,10 +62,10 @@ const Header = () => {
                 key={i}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-[18px] cursor-pointer text-white ${
+                  `text-[18px] cursor-pointer text-black ${
                     isActive
-                      ? "font-normal text-white"
-                      : "font-normal text-white/80 hover:text-white transition-all"
+                      ? "font-normal text-black"
+                      : "font-normal text-black/80 hover:text-black transition-all"
                   }`
                 }
               >
@@ -79,13 +79,13 @@ const Header = () => {
             {menuOpen ? (
               <HiX
                 size={30}
-                className="cursor-pointer"
+                className="cursor-pointer "
                 onClick={() => setMenuOpen(false)}
               />
             ) : (
               <HiMenu
                 size={30}
-                className="cursor-pointer"
+                className="cursor-pointer text-black/70"
                 onClick={() => setMenuOpen(true)}
               />
             )}
@@ -123,3 +123,4 @@ const Header = () => {
 };
 
 export default Header;
+

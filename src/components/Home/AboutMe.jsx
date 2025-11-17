@@ -29,7 +29,7 @@ const AboutMe = ({ isBtn, isHead }) => {
 
         <div className="flex lg:flex-nowrap flex-wrap items-center gap-5">
           <div className="lg:flex-1">
-            <div className="md:space-y-3.5 lg:text-base text-sm space-y-2 max-w-[500px] mb-4 lg:mb-8 text-gray-300">
+            <div className="md:space-y-3.5 lg:text-base text-sm space-y-2 max-w-[500px] mb-4 lg:mb-8">
               <p>
                 I'm a passionate Frontend Developer who transforms ideas into
                 interactive digital experiences.

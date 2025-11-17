@@ -44,7 +44,7 @@ const Contact = () => {
             </div>
             <div className="lg:flex-1 ">
               <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-5">
-                <div className="border border-white/70 p-3">
+                <div className="border border-black/70 p-3">
                   <h5 className="mb-1 lg:text-xl text-lg font-semibold">
                     Hire me
                   </h5>
@@ -56,7 +56,7 @@ const Contact = () => {
                     View my resume
                   </Button>
                 </div>
-                <div className="border border-white/70 p-3">
+                <div className="border border-black/70 p-3">
                   <h5 className="mb-1 lg:text-xl text-lg font-semibold">
                     Message me here
                   </h5>

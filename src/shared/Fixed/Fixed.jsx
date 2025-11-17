@@ -24,14 +24,14 @@ const Fixed = () => {
 
   return (
     <div className="flex flex-col gap-4 items-center">
-      <div className="w-px mx-auto h-46 bg-white/80"></div>
+      <div className="w-px mx-auto h-46 bg-black/80"></div>
       {socialLinks.map((item, index) => (
         <Link
           key={index}
           to={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group flex items-center text-primary/80 hover:text-purple-200 transition-all"
+          className="relative group flex items-center text-primary/80 hover:text-purple-600 transition-all"
         >
           {item.icon}
           <span

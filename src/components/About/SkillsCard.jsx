@@ -7,7 +7,7 @@ const SkillsCard = ({ skills }) => {
       {skills.map((items, i) => (
         <div
           key={i}
-          className="group hover:font-semibold flex flex-col items-center justify-center bg-black/70 hover:border-purple-200 hover:bg-black border border-white/40 p-3 hover:scale-105 transition-all"
+          className="group hover:font-semibold flex flex-col items-center justify-center hover:border-purple-300 hover:bg-gray-300 bg-gray-200 border border-white/40 p-3 hover:scale-105 transition-all"
         >
           <img
             src={items.icon}

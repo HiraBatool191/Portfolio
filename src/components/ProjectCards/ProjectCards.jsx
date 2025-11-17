@@ -12,7 +12,7 @@ const ProjectCards = ({ projectcard, isImg }) => {
       {projectcard.map((items, i) => (
         <div
           key={i}
-          className="text-primary border border-white/70 hover:scale-103 transition-all"
+          className="text-primary border border-gray/70 hover:scale-103 transition-all "
         >
           {isImg && items.img && (
             <img
@@ -22,7 +22,7 @@ const ProjectCards = ({ projectcard, isImg }) => {
               onClick={() => setActiveCard(items)}
             />
           )}
-          <div className="border-y border-white/70 px-1.5 py-2">
+          <div className="border-y border-gray/70 px-1.5 py-2">
             <p className="lg:text-base text-sm text-primary/80">{items.frame}</p>
           </div>
           <div className="px-3 py-3.5">
@@ -44,7 +44,7 @@ const ProjectCards = ({ projectcard, isImg }) => {
 
               <Button
                 onClick={() => setActiveCard(items)}
-                className="border-white/50 hover:bg-transparent "
+                className="!border-black/50 hover:bg-transparent "
                 suffixImg={<FiSettings />}
               >
                 Tech Stack
