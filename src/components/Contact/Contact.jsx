@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { MdEmail, MdPhone } from "react-icons/md";
 import Button from "../Button/Button";
-import cvImage from "../../assets/CV.jpeg";
-import cvPdf from "../../assets/CV.pdf";
+import cvImage from "../../assets/HiraCV.png";
+import cvPdf from "../../assets/HiraBatoolCV.pdf";
 import Model from "../Model/Model";
 import { Link } from "react-router-dom";
 
