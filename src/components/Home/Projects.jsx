@@ -39,10 +39,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" py-10 md:py-20 px-2.5 md:px-0 ">
+    <div className=" pb-15 md:py-20 px-2.5 md:px-0 ">
       
-      
-
       <div className="container ">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">

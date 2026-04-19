@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <div className="container text-white">
-      <div className="flex items-center gap-3 mb-10">
+      <div className="flex items-center gap-3 mb-5 lg:mb-10">
         <h2 className="lg:text-3xl text-2xl font-semibold">
           <span className="text-cyan-500 mr-1">#</span>about-me
         </h2>
@@ -11,7 +11,7 @@ const AboutMe = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8 items-center">
-        <div className="space-y-5">
+        <div className="lg:space-y-5 space-y-2">
           <h3 className="text-xl font-semibold text-cyan-400">
             Frontend Developer
           </h3>
