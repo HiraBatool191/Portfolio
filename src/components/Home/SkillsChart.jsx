@@ -53,14 +53,14 @@ const SkillsChart = () => {
             show: true,
             fontSize: "14px",
             offsetY: 25,
-            color: "#000",
+            color: "#fff",
           },
           value: {
             show: true,
             fontSize: "22px",
             fontWeight: "bold",
             offsetY: -15,
-            color: "#000",
+            color: "#fff",
             formatter: (val) => `${val}%`,
           },
         },
@@ -70,16 +70,16 @@ const SkillsChart = () => {
   });
 
   const data = [
-    { value: 80, label: "React", color: "#a855f7" },
-    { value: 70, label: "JavaScript", color: "#a855f7" },
-    { value: 94, label: "HTML", color: "#a855f7" },
-    { value: 90, label: "CSS & Tailwind", color: "#a855f7" },
+    { value: 80, label: "React", color: "#06b6d4" },
+    { value: 70, label: "JavaScript", color: "#06b6d4" },
+    { value: 94, label: "HTML", color: "#06b6d4" },
+    { value: 90, label: "CSS & Tailwind", color: "#06b6d4" },
   ];
 
   return (
     <div
       ref={sectionRef}
-      className="border border-black/70 rounded-2xl grid grid-cols-2 gap-3 max-w-[450px] mr-auto p-3"
+      className="border border-white/70 rounded-2xl grid grid-cols-2 gap-3 max-w-[450px] mr-auto p-3"
     >
       {data.map((item, i) => (
         <div key={i} className="flex justify-center items-center">

@@ -29,7 +29,7 @@ const Header = () => {
             onClick={() => navigate("/")}
           >
             <motion.span
-              className="text-purple-500"
+              className="text-cyan-500"
               initial={{ x: -30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -38,7 +38,7 @@ const Header = () => {
             </motion.span>
 
             <motion.span
-              className="mx-1 text-purple-500"
+              className="mx-1 text-cyan-500"
               initial={{ scale: 0.5, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -47,7 +47,7 @@ const Header = () => {
             </motion.span>
 
             <motion.span
-              className="text-purple-500"
+              className="text-cyan-500"
               initial={{ x: 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -64,12 +64,12 @@ const Header = () => {
                 className={({ isActive }) =>
                   `text-[18px] cursor-pointer text-black ${
                     isActive
-                      ? "font-normal text-black"
-                      : "font-normal text-black/80 hover:text-black transition-all"
+                      ? "font-normal text-white"
+                      : "font-normal text-white/80 hover:text-white transition-all"
                   }`
                 }
               >
-                <span className="text-purple-500 mr-1">#</span>
+                <span className="text-cyan-500 mr-1">#</span>
                 {item.title}
               </NavLink>
             ))}
@@ -85,7 +85,7 @@ const Header = () => {
             ) : (
               <HiMenu
                 size={30}
-                className="cursor-pointer text-black/70"
+                className="cursor-pointer text-white/70"
                 onClick={() => setMenuOpen(true)}
               />
             )}
@@ -107,12 +107,12 @@ const Header = () => {
               className={({ isActive }) =>
                 `text-xl cursor-pointer ${
                   isActive
-                    ? "font-bold text-purple-400"
+                    ? "font-bold text-cyan-400"
                     : "font-normal text-white/80 hover:text-white transition-all"
                 }`
               }
             >
-              <span className="text-purple-500 mr-1">#</span>
+              <span className="text-cyan-500 mr-1">#</span>
               {item.title}
             </NavLink>
           ))}

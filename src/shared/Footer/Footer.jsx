@@ -23,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer className="relative py-8 md:px-0 px-2.5 overflow-hidden ">
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-[length:200%_200%] animate-[gradientMove_6s_linear_infinite]"></div>
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-cyan-500 via-cyan-300 to-cyan-800 bg-[length:200%_200%] animate-[gradientMove_6s_linear_infinite]"></div>
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-wrap md:gap-5 gap-3 items-start justify-between pb-5">
@@ -32,9 +32,9 @@ const Footer = () => {
               className="flex items-center text-xl font-bold cursor-pointer mb-2"
               onClick={() => navigate("/")}
             >
-              <span className="text-purple-400">&lt;</span>
-              <span className="mx-1 text-purple-400">Hira</span>
-              <span className="text-purple-400">/&gt;</span>
+              <span className="text-cyan-400">&lt;</span>
+              <span className="mx-1 text-cyan-400">Hira</span>
+              <span className="text-cyan-400">/&gt;</span>
             </div>
             <p className="text-primary/80 lg:text-base text-sm">
               Let's build something amazing together.
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="lg:text-2xl text-xl text-primary font-bold mb-2">
+            <h3 className="lg:text-2xl text-xl text-cyan-400 font-bold mb-2">
               Media
             </h3>
             <div className="flex gap-4">

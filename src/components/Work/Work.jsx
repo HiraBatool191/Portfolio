@@ -46,16 +46,16 @@ const Work = () => {
 
   return (
     <>
-      <div className="text-primary lg:pt-40 pt-30 lg:pb-10 pb-5 px-2.5 md:px-2.5">
+      <div className="text-primary pt-30 pb-5 px-2.5 md:px-0">
         <div className="container">
           <div className="lg:mb-8 mb-5">
             <h3 className="lg:text-[32px] text-2xl mb-2">
-              <span className="text-purple-500">/</span>projects
+              <span className="text-cyan-500">/</span>projects
             </h3>
             <p className="lg:text-base text-sm">List of my projects</p>
           </div>
           <h3 className="lg:text-2xl text-xl mb-4">
-            <span className="text-purple-500 mr-1">#</span>UI Projects
+            <span className="text-cyan-500 mr-1">#</span>UI Projects
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start ">
             <ProjectCards projectcard={projectcard} isImg="true" />

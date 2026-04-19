@@ -43,7 +43,7 @@ const SmallProjects = () => {
     <div className="text-primary lg:pt-10 pt-5 pb-10 lg:pb-20 px-2.5 md:px-2.5">
       <div className="container">
         <h3 className="lg:text-2xl text-xl mb-4">
-          <span className="text-purple-500 mr-1">#</span>Other Projects
+          <span className="text-cyan-500 mr-1">#</span>Other Projects
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start ">
           <ProjectCards projectcard={projectcard} />

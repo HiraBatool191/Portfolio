@@ -13,7 +13,7 @@ const Model = ({ setIsOpen, children, className = "" }) => {
       >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 md:top-3 right-3 text-gray-700 hover:text-black transition"
+          className="absolute top-2 md:top-3 right-3 text-gray-700 hover:text-cyan-700 transition"
         >
           <IoIosCloseCircleOutline size={24} className="cursor-pointer" />
         </button>
