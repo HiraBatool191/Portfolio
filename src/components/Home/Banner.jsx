@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div
       className="
-       h-screen pt-30 pb-5 px-2.5 md:px-0 flex flex-col justify-center items-center"
+      section top h-screen pt-30 pb-5 px-2.5 md:px-0 flex flex-col justify-center items-center"
     >
       <div className="container  mx-auto  gap-1 text-center">
         <h1 className="hidden lg:block text-3xl md:text-5xl font-bold mb-4">

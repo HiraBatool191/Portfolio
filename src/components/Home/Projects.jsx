@@ -39,7 +39,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" pb-15 md:py-20 px-2.5 md:px-0 ">
+    <div className="section bottom pb-15 md:py-20 px-2.5 md:px-0 ">
       
       <div className="container ">
         <div className="flex items-center justify-between mb-8">

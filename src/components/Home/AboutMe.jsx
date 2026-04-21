@@ -11,7 +11,7 @@ const AboutMe = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8 items-center">
-        <div className="lg:space-y-5 space-y-2">
+        <div className="section left lg:space-y-5 space-y-2">
           <h3 className="text-xl font-semibold text-cyan-400">
             Frontend Developer
           </h3>
@@ -54,7 +54,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
+        <div className="section right bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300">
           <h3 className="text-lg font-semibold text-cyan-400 mb-4">
             Quick Info
           </h3>

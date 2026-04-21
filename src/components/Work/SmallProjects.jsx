@@ -45,7 +45,7 @@ const SmallProjects = () => {
         <h3 className="lg:text-2xl text-xl mb-4">
           <span className="text-cyan-500 mr-1">#</span>Other Projects
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start ">
+        <div className="section  top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-start ">
           <ProjectCards projectcard={projectcard} />
         </div>
       </div>

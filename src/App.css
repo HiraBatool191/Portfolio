@@ -15,69 +15,30 @@ body{
 :root {
   --primary-color: #fff;
   --secondary-color: black;
+}.section {
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 
-
-
-
-
-
-
-
-.typewriter {
-  overflow: hidden;
-  display: inline-block;
-  white-space: nowrap;
-  width: 0%;                 
-  animation: typing 3s steps(40, end) forwards, blink 0.7s step-end infinite;
+/* directions */
+.top {
+  transform: translateY(-60px);
 }
 
-.delay-0 { animation-delay: 0s, 0s; }
-.delay-1 { animation-delay: 3s, 3s; }
-
-.delay-2 { animation-delay: 0s, 0s; }
-.delay-3 { animation-delay: 1s, 1s; }
-.delay-4 { animation-delay: 3s, 3s; }
-.delay-5 { animation-delay: 5s, 5s; }
-.delay-6 { animation-delay: 7s, 7s; }
-
-@keyframes typing {
-  from {
-    width: 0%;
-    visibility: visible; 
-  }
-  to { width: 100%; }
+.bottom {
+  transform: translateY(60px);
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
+.left {
+  transform: translateX(-60px);
 }
 
-
-@keyframes bounce-x {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(6px);
-  }
+.right {
+  transform: translateX(60px);
 }
 
-.animate-bounce-x {
-  animation: bounce-x 1s infinite;
+/* when visible */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
-
-
-.animated-bg {
-  background: linear-gradient(-45deg, #a955f748, #302b63, #24243e, rgba(107, 17, 203, 0.418));
-  background-size: 400% 400%;
-  animation: gradientBG 12s ease infinite;
-}
-
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-

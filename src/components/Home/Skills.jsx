@@ -14,10 +14,10 @@ const Skills = () => {
           <div className="lg:block hidden w-full h-[0.5px] bg-cyan-400"></div>
         </div>
         <div className="flex lg:flex-nowrap flex-wrap items-center gap-5">
-          <div className="lg:w-[50%]">
+          <div className="section left lg:w-[50%]">
             <SkillsChart />
           </div>
-          <div className="lg:flex-1 w-full bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
+          <div className="section right lg:flex-1 w-full bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/30">
          
             <div className=" mb-3">
               

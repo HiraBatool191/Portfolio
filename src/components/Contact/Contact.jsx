@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="text-primary lg:pt-40 pt-30 lg:pb-10 pb-5 px-2.5 md:px-2.5">
+      <div className="text-primary lg:pt-25 pt-30 lg:pb-10 pb-5 px-2.5 md:px-2.5">
         <div className="container">
           <div className="lg:mb-8 mb-5">
             <h3 className="lg:text-[32px] text-2xl mb-2">
@@ -34,14 +34,14 @@ const Contact = () => {
             <p className="lg:text-base text-sm">Have an Idea? Let’s Talk!</p>
           </div>
           <div className="flex lg:flex-nowrap flex-wrap items-center gap-5">
-            <div className="lg:flex-1 lg:text-base text-sm">
+            <div className="section left lg:flex-1 lg:text-base text-sm">
               <p>
                 Every pixel matters and every line of code tells a story. If
                 you’re looking for a passionate frontend developer to turn your
                 vision into reality — let’s talk!
               </p>
             </div>
-            <div className="lg:flex-1 ">
+            <div className="section right lg:flex-1 ">
               <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-5">
                  <div className="bg-gray-900/40 backdrop-blur-md border border-white/10 rounded-2xl hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 p-3">
                   <h5 className="mb-1 lg:text-xl text-lg font-semibold">

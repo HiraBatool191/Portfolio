@@ -70,7 +70,7 @@ const SkillsImgs = () => {
         <h3 className="lg:text-2xl text-xl mb-4">
           <span className="text-cyan-500 mr-1">#</span>Skills
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-7 md:gap-4 gap-3 items-start ">
+        <div className="section bottom grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-7 md:gap-4 gap-3 items-start ">
           <SkillsCard skills={skills}/>
         </div>
       </div>

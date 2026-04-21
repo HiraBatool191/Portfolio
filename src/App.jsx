@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Routers from './Routers'
+import { useState } from "react";
+import "./App.css";
+import Routers from "./Routers";
+import useScrollAnimation from "./useScrollAnimation";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  // 👇 scroll animation hook add kiya
+  useScrollAnimation();
 
   return (
     <>
-     <Routers/>
+      <Routers />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
